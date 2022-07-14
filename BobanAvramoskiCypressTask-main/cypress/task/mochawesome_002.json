@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-03-26T11:02:22.733Z",
+    "end": "2022-03-26T11:02:52.145Z",
+    "duration": 29412,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "818d3b03-a993-4773-bdef-9cc3c5965e9a",
+      "title": "",
+      "fullFile": "cypress/integration/TestRuns/ForgotPassword.spec.js",
+      "file": "cypress/integration/TestRuns/ForgotPassword.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6f234150-82e1-4a5b-89f8-1a5c55d49c70",
+          "title": "ForgotPassword",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Resetting password",
+              "fullTitle": "ForgotPassword Resetting password",
+              "timedOut": null,
+              "duration": 29019,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit(\"/\")\n// cy.get(\"[class=ico]\").click()\n// cy.get(\".ForgotPasswordLinkButton\").click()\n// cy.get(\"#EmailAddress\").type(\"boban.avramoski@testdevlab.com\")\n// cy.get(\"#EmailRequestSubmit\").click()\n// cy.get(\".lowerPass\").should(\"contain.text\", \"If the email address entered was correct, you should receive a new email shortly with a link to reset your password.\")\n_LoginPage.LoginPage.clickForgotButton();\n_LoginPage.LoginPage.enterEmailAndVerifyMessage(\"registeredUser\", \"If the email address entered was correct, you should receive a new email shortly with a link to reset your password.\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: expected '<div.lowerPass>' to contain text 'If the email address entered was correct, you should receive a new email shortly with a link to reset your password.', but the text was '\\n                        \\n                            \\n                            \\n                                \\n                                    \\n                                        \\n                                            Email Address:\\n                                        \\n                                        \\n                                            \\n                                        \\n                                        \\n                                            \\n                                                \\n                                        \\n                                    \\n                                \\n                            \\n                            \\n                                \\n                                    \\n                                        Send Email\\n                                    \\n                                \\n                                \\n                                    \\n                                        Cancel\\n                                    \\n                                \\n                            \\n                        \\n                    '",
+                "estack": "AssertionError: Timed out retrying after 4000ms: expected '<div.lowerPass>' to contain text 'If the email address entered was correct, you should receive a new email shortly with a link to reset your password.', but the text was '\\n                        \\n                            \\n                            \\n                                \\n                                    \\n                                        \\n                                            Email Address:\\n                                        \\n                                        \\n                                            \\n                                        \\n                                        \\n                                            \\n                                                \\n                                        \\n                                    \\n                                \\n                            \\n                            \\n                                \\n                                    \\n                                        Send Email\\n                                    \\n                                \\n                                \\n                                    \\n                                        Cancel\\n                                    \\n                                \\n                            \\n                        \\n                    '\n    at Function.containText (https://lv.sportsdirect.com/__cypress/tests?p=cypress/integration/TestRuns/ForgotPassword.spec.js:177:22)\n    at Context.eval (https://lv.sportsdirect.com/__cypress/tests?p=cypress/integration/TestRuns/ForgotPassword.spec.js:264:12)",
+                "diff": "- '\\n                        \\n                            \\n                            \\n                                \\n                                    \\n                                        \\n                                            Email Address:\\n                                        \\n                                        \\n                                            \\n                                        \\n                                        \\n                                            \\n                                                \\n                                        \\n                                    \\n                                \\n                            \\n                            \\n                                \\n                                    \\n                                        Send Email\\n                                    \\n                                \\n                                \\n                                    \\n                                        Cancel\\n                                    \\n                                \\n                            \\n                        \\n                    '\n+ 'If the email address entered was correct, you should receive a new email shortly with a link to reset your password.'\n"
+              },
+              "uuid": "37a7c5b9-5155-4404-a028-e6a340a0224c",
+              "parentUUID": "6f234150-82e1-4a5b-89f8-1a5c55d49c70",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "37a7c5b9-5155-4404-a028-e6a340a0224c"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 29019,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/task",
+        "html": true,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

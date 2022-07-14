@@ -1,0 +1,12 @@
+{
+  "registeredUser": {
+    "firstName": "Name",
+    "lastName": "Surname",
+    "eMail": "boban.avramoski@testdevlab.com",
+    "passWord": "Password"
+  },
+  "invalidUser": {
+    "eMail": "invalid@userNameboban.com",
+    "passWord": "WrongPassword"
+  }
+}

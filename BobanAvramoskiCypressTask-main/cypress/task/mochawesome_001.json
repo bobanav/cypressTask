@@ -1,0 +1,104 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-03-26T11:01:12.326Z",
+    "end": "2022-03-26T11:02:11.008Z",
+    "duration": 58682,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "4b929d9f-eee9-4811-bd5d-3e3cab7bcb4a",
+      "title": "",
+      "fullFile": "cypress/integration/TestRuns/CheckoutCardError.spec.js",
+      "file": "cypress/integration/TestRuns/CheckoutCardError.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "10f7be44-8803-4a8f-89bc-5205dce247e4",
+          "title": "Going trough checkout process",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Card details error",
+              "fullTitle": "Going trough checkout process Card details error",
+              "timedOut": null,
+              "duration": 58391,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.viewport(1920, 1080);\n_BasePage.BasePage.openHomePage();\n_ProductPage.ProductPage.clickShopNowButton();\n_ProductPage.ProductPage.addProduct(\"email@email.com\");\n_ProductPage.ProductPage.enterDeliveryDetails(\"Sporo\", \"Kucam\", \"Address\", \"Riga\", \"LV-1234\", \"098765432\");\n_ProductPage.ProductPage.verifyCardDetailsError(\"Please complete the card details to continue.\");\n_ProductPage.ProductPage.verifyCartItem(\"Chelsea Home Baby Kit 2021 2022\");",
+              "err": {},
+              "uuid": "9a4d7743-e68d-4afe-9beb-dfbc8d1a455a",
+              "parentUUID": "10f7be44-8803-4a8f-89bc-5205dce247e4",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9a4d7743-e68d-4afe-9beb-dfbc8d1a455a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 58391,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/task",
+        "html": true,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

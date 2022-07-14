@@ -1,0 +1,108 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-03-26T11:04:17.396Z",
+    "end": "2022-03-26T11:04:49.540Z",
+    "duration": 32144,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "81649c30-3e3d-45e7-8ce9-34bbae8df750",
+      "title": "",
+      "fullFile": "cypress/integration/TestRuns/registration.spec.js",
+      "file": "cypress/integration/TestRuns/registration.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "edd970da-1c9f-4c36-9864-15090cae78e6",
+          "title": "Registration test cases",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Registering a new user",
+              "fullTitle": "Registration test cases Registering a new user",
+              "timedOut": null,
+              "duration": 31846,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "// cy.visit(\"/\")\n// cy.get(\"[class=ico]\").click()\n// cy.get(\".innerBorder:nth-child(2) a\").click()\n// cy.get(\"#Registration_FirstName\").type(\"Name\")\n// cy.get(\"#Registration_LastName\").type(\"Surname\")\n// cy.get(\"#Registration_EmailAddress\").type(\"boban.avramoski@testdevlab.com\")\n// cy.get(\"[id=txtPassword]\").type(\"Password\")\n// cy.get(\"#Registration_ConfirmPassword\").type(\"Password\")\n// cy.get(\"#RegistrationSubmit\").click()\n// cy.get(\"[class=TopSubLinkMenu]\").should(\"exist\")\n_RegistrationPage.RegistrationPage.openRegPage();\n_RegistrationPage.RegistrationPage.enterRequiredData(\"registeredUser\");\n_RegistrationPage.RegistrationPage.clickSubmit();\n_HomePage.HomePage.verifyAccountMenuExists();",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[class=TopSubLinkMenu]`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `[class=TopSubLinkMenu]`, but never found it.\n    at Function.doesExist (https://lv.sportsdirect.com/__cypress/tests?p=cypress/integration/TestRuns/registration.spec.js:181:22)\n    at Function.verifyAccountMenuExists (https://lv.sportsdirect.com/__cypress/tests?p=cypress/integration/TestRuns/registration.spec.js:223:10)\n    at Context.eval (https://lv.sportsdirect.com/__cypress/tests?p=cypress/integration/TestRuns/registration.spec.js:146:24)",
+                "diff": null
+              },
+              "uuid": "638f1ce3-0b87-42da-a347-c1f41d74fa94",
+              "parentUUID": "edd970da-1c9f-4c36-9864-15090cae78e6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "638f1ce3-0b87-42da-a347-c1f41d74fa94"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 31846,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/task",
+        "html": true,
+        "overwrite": false
+      },
+      "version": "6.2.0"
+    }
+  }
+}

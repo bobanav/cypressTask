@@ -1,0 +1,11 @@
+{
+  "chromeWebSecurity": false,
+  "baseUrl": "https://lv.sportsdirect.com/",
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/task",
+    "html": true,
+    "overwrite": false
+  }
+
+}
